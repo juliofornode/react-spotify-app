@@ -1,0 +1,83 @@
+@import 'normalize.css';
+
+body {
+  background-color: gray;
+  color: white;
+}
+
+.App {
+  text-align: center;
+  font-size: 18px;
+  padding: 5%;
+}
+
+.App-title {
+  font-size: 25px;
+}
+
+.Profile {
+  display: flex;
+  justify-content: left;
+}
+
+.Profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  border: 4px solid white;
+  object-fit: cover;
+}
+
+.Profile-info {
+  margin-left: 10px;
+  text-align: left;
+}
+
+.Profile-name {
+  font-size: 20px;
+}
+
+.Profile-genres {
+  font-size: 14px;
+}
+
+.Gallery {
+  margin: 20px;
+}
+
+.Track {
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.Track-name {
+  width: 250px;
+  margin: 0 auto;
+  color: black;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.Track-image {
+  width: 100%;
+}
+
+
+@media screen and (min-width: 640px) {
+  .Gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .Track {
+    flex: 0 1 calc(50% - 1em);
+  }
+
+}
+
+@media screen and (min-width: 960px) {
+  .Track {
+    flex: 0 1 calc(33% - 1em);
+  }
+}
